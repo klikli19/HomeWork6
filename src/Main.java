@@ -76,6 +76,16 @@ public class Main {
         System.out.println(Arrays.toString(array));
         System.out.println();
 
+        System.out.println("Задание 7");
+        int [] ball = {9 ,6, 4, 3, 7, 5};
+        for (int i = 0; i < ball.length / 2; i++) {
+            int temp = ball[i];
+            ball[i] = ball[ball.length - i - 1];
+            ball[ball.length - i - 1] = temp;
+        }
+        System.out.println(Arrays.toString(ball));
+        System.out.println();
+
         System.out.println("Задание 8");
         int[] box = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
         for (int i : box) {
