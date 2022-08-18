@@ -119,17 +119,4 @@ public class Main {
         }
         return arr;
     }
-
-    public static void bubbleSort(int[] arrs) {
-        for (int i = arrs.length - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                if (arrs[j] > arrs[j + 1]) {
-                    int temp = arrs[j];
-                    arrs[j] = arrs[j + 1];
-                    arrs[j + 1] = temp;
-                }
-            }
-        }
-
-    }
 }
